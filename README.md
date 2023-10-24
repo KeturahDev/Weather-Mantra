@@ -1,4 +1,4 @@
-# [Weather Mantra](https://master.d2rd0wm9h254t.amplifyapp.com/)
+# [Weather Mantra](https://main.dkhexjazkuu41.amplifyapp.com/)
 
 By: Keturah Howard 2023 Oct 23
 
@@ -7,8 +7,8 @@ By: Keturah Howard 2023 Oct 23
 A place to meditate on your mantra. Enter your mantra into the input and it will rain from the meditation cloud.
 Inspired from rain text animation from linked in post.
 
-[Live coming soon! Through AWS Amplify. 
-](https://master.d2rd0wm9h254t.amplifyapp.com/)
+[Live! Through AWS Amplify. 
+](https://main.dkhexjazkuu41.amplifyapp.com/)
 
 ## Behavior List
 
