@@ -5,7 +5,7 @@ By: Keturah Howard 2023 Oct 23
 ## Description
 
 A place to meditate on your mantra. Enter your mantra into the input and it will rain from the meditation cloud.
-Inspired from rain text animation from linked in post.
+Inspired from rain text animation from linked in post and [this tutorial](https://www.youtube.com/watch?v=OfSlkvtCeaI&ab_channel=OnlineTutorials).
 
 [Live! Through AWS Amplify. 
 ](https://main.dkhexjazkuu41.amplifyapp.com/)
