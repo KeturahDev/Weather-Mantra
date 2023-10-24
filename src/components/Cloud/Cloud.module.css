@@ -33,6 +33,29 @@
   box-shadow: 90px 0 0 30px #fff;
 }
 
-/* .test{
-  background-color: rgba(209, 45, 45, 0.333);
-} */
+.text{
+  position: absolute;
+  top: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+  0 0 15px #fff,
+  0 0 30px #fff;
+  transform-origin: bottom;
+  animation: rain 2s linear forwards;
+}
+
+@keyframes rain
+{
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  70% {
+    transform: translateY(690px) scale(1);
+  }
+  100% {
+    transform: translateY(690px) scale(0);
+  }
+}
