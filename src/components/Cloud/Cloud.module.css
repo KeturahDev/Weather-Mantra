@@ -1,7 +1,5 @@
 .container {
   margin-top: 160px;
-  /* border: 2px solid green; */
-
   position: relative;
   height: 400px;
   width: 100%;
@@ -58,4 +56,31 @@
   100% {
     transform: translateY(690px) scale(0);
   }
+}
+
+.formContainer {
+  position: absolute;
+  top: 65%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  box-shadow: 0 5px 80px 0 #ccc;
+  gap: 4px;
+  width: 320px;
+  transition: opacity 1s;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  font-size: calc(10px + 1vmin);
+  background: transparent;
+  color: #fff;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
 }
