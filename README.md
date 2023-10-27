@@ -20,7 +20,8 @@ Inspired from rain text animation from linked in post and [this tutorial](https:
 | Behavior  |                  Input                   |                                   Output |
 | --------- | :--------------------------------------: | ---------------------------------------: |
 | open page |      click on link from this readme      |                         my page opens :) |
-| text animation | enter phrase into input, select enter    | text animation of rain using letters entered into phrase |
+| text animation | enter phrase into input, select 'submit'    | text animation of rain using letters entered into phrase, form fades to hidden, new mantra button appears  |
+| enter new phrase | click 'new mantra' | new mantra button disapears, rain stops, mantra form appears |
 | hire me?  | you check out my work and your impressed | you extend me an offer on your cool team |
 
 ## Technologies Used

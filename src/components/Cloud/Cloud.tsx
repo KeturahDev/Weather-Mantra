@@ -3,6 +3,7 @@ import styles from './Cloud.module.css';
 
 const Cloud = () => {
   const [hideForm, setHideForm] = useState<boolean>(false);
+  const [rainIntId, setRainIntId] = useState<number>(0);
   const getLetter = (input: string = "love") => {
     return input[Math.floor(Math.random() * input.length)];
   }
@@ -12,7 +13,7 @@ const Cloud = () => {
     let e = document.createElement('div');
     let left = Math.floor(Math.random() * 320);
     let size = Math.random() * 1.5;
-    
+
 
     e.classList.add(styles.text);
     cloud?.appendChild(e);
@@ -26,6 +27,16 @@ const Cloud = () => {
     }, 600);
   };
 
+  const beginRain = (mantra: string) => {
+    return setInterval(() => {
+      rain(mantra);
+    }, 100);
+  }
+
+  const killRain = () => {
+    clearInterval(rainIntId);
+  }
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     const target = e.target as typeof e.target & {
@@ -33,20 +44,25 @@ const Cloud = () => {
     };
     console.log(target.mantra.value);
     setHideForm(true);
-    setInterval(() => {
-      rain(target.mantra.value);
-    }, 100);
+    setRainIntId(beginRain(target.mantra.value) as unknown as number)
   }
 
-  return(
+  const handleNewMantra = () => {
+    killRain();
+    setHideForm(false)
+    //hide mantra button
+  };
+
+  return (
     <div>
       <div className={styles.container}>
-        <div id="cloud" className={styles.cloud}/>
+        <div id="cloud" className={styles.cloud} />
       </div>
       <form onSubmit={handleSubmit} className={`${styles.formContainer} ${hideForm ? styles.hidden : null}`} name="submit mantra">
-        <input name="mantra" type='text'/>
-        <button type='submit'>Submit</button>
+        <input name="mantra" type='text' />
+        <button type='submit'>submit</button>
       </form>
+      <button className={styles.newMantraButton} onClick={handleNewMantra}>new mantra</button>
     </div>
   )
 };
