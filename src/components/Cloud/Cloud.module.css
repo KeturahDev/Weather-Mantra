@@ -42,7 +42,7 @@
   0 0 15px #fff,
   0 0 30px #fff;
   transform-origin: bottom;
-  animation: rain 2s linear forwards;
+  animation: rain 1.9s linear forwards;
 }
 
 @keyframes rain
@@ -61,7 +61,7 @@
 .formContainer {
   position: absolute;
   top: 65%;
-  border-radius: 6px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -77,10 +77,25 @@ input, button {
   font-size: calc(10px + 1vmin);
   background: transparent;
   color: #fff;
-  border-radius: 3px;
   width: 100%;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-right: 1px solid #d4d4d4;
 }
 
 .hidden {
   opacity: 0;
+}
+
+.newMantraButton {
+  transition: opacity 2s 5s;
+  border: 1px solid #d4d4d4;
+  border-radius: 1rem;
+}
+.newMantraButton.hidden {
+  transition: opacity 1s 0s;
 }
