@@ -10,6 +10,11 @@ Inspired from rain text animation from linked in post and [this tutorial](https:
 [Live! Through AWS Amplify. 
 ](https://main.dkhexjazkuu41.amplifyapp.com/)
 
+Select a Mantra             |  Word Animation Meditation
+:-------------------------:|:-------------------------:
+![Screenshot 2023-11-05 at 12 05 28 AM](https://github.com/KeturahDev/Weather-Mantra/assets/32975967/ffcd1fda-0e8f-443e-ae46-929168b47eca)  |  ![Screenshot 2023-11-05 at 12 07 25 AM](https://github.com/KeturahDev/Weather-Mantra/assets/32975967/1e24e261-b127-46bd-aa5b-7412d082ea45)
+
+
 ## Behavior List
 
 - User can submit a phrase to rain down from a rain cloud animation
