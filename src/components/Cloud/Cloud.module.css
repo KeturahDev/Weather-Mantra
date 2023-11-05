@@ -1,5 +1,5 @@
 .container {
-  margin-top: 160px;
+  margin-top: 100px;
   position: relative;
   height: 400px;
   width: 100%;
@@ -11,6 +11,7 @@
 
 .cloud {
   position: relative;
+  top: 50px;
   width: 320px;
   height: 100px;
   background: #fff;
@@ -42,7 +43,7 @@
   0 0 15px #fff,
   0 0 30px #fff;
   transform-origin: bottom;
-  animation: rain 1.9s linear forwards;
+  animation: rain 2s linear forwards;
 }
 
 @keyframes rain
@@ -51,10 +52,10 @@
     transform: translateY(0) scale(1);
   }
   70% {
-    transform: translateY(690px) scale(1);
+    transform: translateY(290px) scale(1);
   }
   100% {
-    transform: translateY(690px) scale(0);
+    transform: translateY(290px) scale(0);
   }
 }
 

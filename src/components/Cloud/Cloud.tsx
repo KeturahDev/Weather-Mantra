@@ -11,24 +11,26 @@ const Cloud = () => {
   const rain = (mantra: string) => {
     let cloud = document.querySelector('#cloud');
     let e = document.createElement('div');
-    let left = Math.floor(Math.random() * 320); 
-    let size = Math.random() * 1;
+    let left = Math.floor(Math.random() * 300); 
+    let size = Math.random() * .8;
+    let duration = Math.random() * 1;
 
     e.classList.add(styles.text);
     cloud?.appendChild(e);
     e.innerText = getLetter(mantra);
     e.style.left = left + "px";
-    e.style.fontSize = 0.5 * size + 'em';
+    e.style.fontSize = 0.5 + size + 'em';
+    e.style.animationDuration = .8 + duration + 's';
 
     setTimeout(() => {
       cloud?.removeChild(e);
-    }, 600);
+    }, 2000);
   };
 
   const beginRain = (mantra: string) => {
     return setInterval(() => {
       rain(mantra);
-    }, 100);
+    }, 20);
   }
 
   const killRain = () => {
@@ -51,6 +53,8 @@ const Cloud = () => {
 
   return (
     <div>
+
+<button className={`${styles.newMantraButton} ${!hideForm ? styles.hidden : null}`} onClick={handleNewMantra}>new mantra</button>
       <div className={styles.container}>
         <div id="cloud" className={styles.cloud} />
       </div>
@@ -58,7 +62,6 @@ const Cloud = () => {
         <input name="mantra" autoComplete='off' type='text' required/>
         <button type='submit'>submit</button>
       </form>
-      <button className={`${styles.newMantraButton} ${!hideForm ? styles.hidden : null}`} onClick={handleNewMantra}>new mantra</button>
     </div>
   )
 };
