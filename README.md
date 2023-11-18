@@ -34,6 +34,7 @@ Select a Mantra             |  Word Animation Meditation
 - React
 - Typescript
 - AWS Amplify
+- CSS & CSS Animations
 
 ## Liscense
 
